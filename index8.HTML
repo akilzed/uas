@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRPL</title>
+    <!-- Memuat Bootstrap 5 CSS dari CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: #f8f9fa; /* Warna latar belakang umum */
+        }
+        .navbar-emerald-800 {
+            background-color: #065F46; /* Warna hijau tua */
+        }
+        .navbar-emerald-600 {
+            background-color: #059669; /* Warna hijau sedang */
+        }
+        .navbar-emerald-700 {
+            background-color: #047857; /* Warna hijau sedikit lebih gelap */
+        }
+        
+        .nav-link {
+            padding: 0.5rem 1rem; /* Padding untuk tautan navigasi */
+            border-radius: 0.25rem; /* Sudut membulat */
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Transisi halus */
+        }
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Latar belakang sedikit transparan saat hover */ 
+        }
+          /* Custom CSS for the green line */
+        .director-title {
+            display: flex;
+            align-items: center;
+            gap: 1rem; /* Space between the line and text */
+            margin-top: 1rem;
+            font-size: 10px;
+        }
+        .director-title::before {
+            content: '';
+            display: block;
+            width: 5px; /* Thickness of the line */
+            height: 40px; /* Height of the line, adjust as needed */
+            background-color: #28a745; /* Green color, you can pick a specific shade if needed */
+        }
+        /* Style for breadcrumb link */
+        .breadcrumb-item a {
+            color: #28a745; /* Green color for active breadcrumb text */    
+            text-decoration: none;
+        }
+        .breadcrumb-item.active {
+            color: #6c757d; /* Default Bootstrap text color for active item */
+        }
+
+        .video-responsive iframe {
+            position: relative;
+            width: 80%;
+            margin-left: 100px;
+               
+        }
+        .read-more {
+            display: flex;
+            align-items: center;
+            color: #b37a1f;
+            font-weight: 500;
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .read-more::before {
+            content: "";
+            display: inline-block;
+            height: 3px;
+            width: 35px;
+            background-color: #b37a1f;
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+        .card {
+            border-radius: 10px;
+            width: 50%;
+        }
+        .card img {
+            border-radius: 10px 10px 0 0;
+        }
+       
+        .footer {
+            background-color: #198754;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi Utama -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-emerald-800 shadow-md">
+        <div class="container">
+            <!-- Pilihan Bahasa -->
+            <span class="navbar-text text-white me-4">IDN | ENG</span>
+
+            <!-- Div untuk tautan navigasi utama, selalu terlihat pada tampilan desktop -->
+            <!-- Kelas 'collapse' dan atribut data-bs-target/toggle dihapus dari toggler button -->
+            <div class="navbar-collapse justify-content-end" id="navbarNavMain">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="proJekuas.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Salamdridirektur.html">Tentang WBI</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Program Studi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Calon Mahasiswa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bagian dengan Logo WBI -->
+    <div class="navbar-emerald-600 py-4">
+        <div class="container">
+            <div class="d-flex align-items-center wbi-logo-section">
+                <!-- Placeholder untuk Logo WBI -->
+                <img src="https://placehold.co/100x50/065F46/FFFFFF?text=WBI" alt="Logo WBI Politeknik" class="rounded me-3">
+                <div class="text-white fs-4 fw-bold wbi-text">WBI <br> <span class="fs-6 fw-normal">POLITEKNIK</span></div>
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- Konten Utama -->
+    <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">TENTANG WBI</a></li>
+                <li class="breadcrumb-item active" aria-current="page">TEKNOLOGI REKAYASA PERANGKAT LUNAK</li>
+            </ol>
+        </nav>
+
+        <div class="director-title">
+            <h1 class="mb-0">TEKNOLOGI REKAYASA PERANGKAT LUNAK</h1>
+        </div>
+    </div>
+    <div class="mb-2">
+        <div class="video-responsive">
+            <iframe width="1600" height="900" frameborder="0"allowfullscreen ="allowfullscreen" src="https://www.youtube.com/embed/RFFSWgZR57M" ></iframe>
+        </div>
+    </div>
+     <section class="container my-4">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img 
+                    src=https://wbi.ac.id/uploads/images/3uVLKcZKtVO0uM1eQ9BTWfVMMrgnVsQZaUNxJYnp.jpg
+                    alt="Gambaran teknologi jaringan digital dengan ikon koneksi di atas latar gedung perkotaan dan langit senja" 
+                    class="img-fluid" 
+                   
+                />
+            </div>
+            <div class="col-md-6">
+                <p><span class="section-title">VISI KEILMUAN</span></p>
+                <p>Pengembangan dan penerapan teknologi rekayasa perangkat lunak yang inovatif dan adaptif dalam mendukung digitalisasi entrepreneurship dalam lingkungan global</p>
+                
+                <p><span class="section-title">MISI</span></p>
+                <ol>
+                    <li>Menyelenggarakan dan mengembangkan pendidikan tinggi vokasional dalam bidang teknologi rekayasa perangkat lunak;</li>
+                    <li>Menyeleng... </li>
+                </ol>
+                <a href="#" class="read-more" role="button">baca selengkapnya</a>
+            </div>
+        </div>
+    </section>
+    <div class="container mt-5">
+    <h2 class="mb-4" style="font-weight: bold;">PROFIL DOSEN</h2>
+    <div class="row">
+        <!-- Card for Muslim Ramli -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="https://wbi.ac.id/uploads/images/dkE4Fxa39rrjlfkTHtXqPkBU2vPDP7AxcvoS1oyg.jpg" class="card-img-top" alt="Muslim Ramli">
+                <div class="card-body">
+                    <h5 class="card-title">Muslim Ramli, S.Kom., M.Kom</h5>
+                    <p class="card-text">Dosen</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card for Septian Simatupang -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="https://wbi.ac.id/uploads/images/Js2mwKzPiosvLpHaxsRJNHyDM7UxVYnFc0lcO8bP.jpg" class="card-img-top" alt="Septian Simatupang">
+                <div class="card-body">
+                    <h5 class="card-title">Septian Simatupang, S.Kom., M.Kom</h5>
+                    <p class="card-text">Dosen</p>
+                </div>
+            </div>
+        </div>
+         <!-- Card for Indah Clara Sari -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="https://wbi.ac.id/uploads/images/LzAeqbT6NmTVfze1lcAbqn5IkQhCTDsJGiOf7qZ2.jpg" class="card-img-top" alt="Indah Clara Sari">
+                <div class="card-body">
+                    <h5 class="card-title">Indah Clara Sari, S.Kom., M.Kom</h5>
+                    <p class="card-text">Dosen</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card for Taufiqurrahman -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="https://wbi.ac.id/uploads/images/baNWyHlITofdH9XD8K1bJNisELbk1dDQO2P76cyU.png" class="card-img-top" alt="Taufiqurrahman">
+                <div class="card-body">
+                    <h5 class="card-title">Taufiqurrahman, S.T., M.Kom</h5>
+                    <p class="card-text">Dosen</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card for Rizki Ramadhansyah -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="https://wbi.ac.id/uploads/images/nZq6yumZnSyJGxIn1r78ILXjgFtTsT10s6P51MUJ.jpg" class="card-img-top" alt="Rizki Ramadhansyah">
+                <div class="card-body">
+                    <h5 class="card-title">Rizki Ramadhansyah, S.T., M.Kom</h5>
+                    <p class="card-text">Dosen</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <p>© 2025 Politeknik WBI. All rights reserved.</p>
+        </div>
+    </footer>
+
+   
+
+        
+    
+</body>
+</html>

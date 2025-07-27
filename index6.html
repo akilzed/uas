@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigasi Kampus</title>
+    <!-- Memuat Bootstrap 5 CSS dari CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: #f8f9fa; /* Warna latar belakang umum */
+        }
+        .navbar-emerald-800 {
+            background-color: #065F46; /* Warna hijau tua */
+        }
+        .navbar-emerald-600 {
+            background-color: #059669; /* Warna hijau sedang */
+        }
+        .navbar-emerald-700 {
+            background-color: #047857; /* Warna hijau sedikit lebih gelap */
+        }
+        
+        .nav-link {
+            padding: 0.5rem 1rem; /* Padding untuk tautan navigasi */
+            border-radius: 0.25rem; /* Sudut membulat */
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Transisi halus */
+        }
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Latar belakang sedikit transparan saat hover */ 
+        }
+          /* Custom CSS for the green line */
+        .director-title {
+            display: flex;
+            align-items: center;
+            gap: 1rem; /* Space between the line and text */
+            margin-top: 2rem;
+        }
+        .director-title::before {
+            content: '';
+            display: block;
+            width: 5px; /* Thickness of the line */
+            height: 40px; /* Height of the line, adjust as needed */
+            background-color: #28a745; /* Green color, you can pick a specific shade if needed */
+        }
+        /* Style for breadcrumb link */
+        .breadcrumb-item a {
+            color: #28a745; /* Green color for active breadcrumb text */    
+            text-decoration: none;
+        }
+        .breadcrumb-item.active {
+            color: #6c757d; /* Default Bootstrap text color for active item */
+        }
+
+        .video-responsive iframe {
+            position: relative;
+            width: 80%;
+            margin-left: 100px;
+               
+        }
+        .banner-caption {
+            font-family: product_sansregular;
+            color: #b2b2b2;
+            margin-top: 1em;
+            font-size: 1em;
+            overflow-wrap: break-word;
+            text-align: left;
+            padding-left: 100px;
+            
+        }
+        .text-decoration {
+            padding-left:100px ;
+        }
+        .footer {
+            background-color: #198754;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi Utama -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-emerald-800 shadow-md">
+        <div class="container">
+            <!-- Pilihan Bahasa -->
+            <span class="navbar-text text-white me-4">IDN | ENG</span>
+
+            <!-- Div untuk tautan navigasi utama, selalu terlihat pada tampilan desktop -->
+            <!-- Kelas 'collapse' dan atribut data-bs-target/toggle dihapus dari toggler button -->
+            <div class="navbar-collapse justify-content-end" id="navbarNavMain">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="proJekuas.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Salamdridirektur.html">Tentang WBI</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Program Studi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Calon Mahasiswa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bagian dengan Logo WBI -->
+    <div class="navbar-emerald-600 py-4">
+        <div class="container">
+            <div class="d-flex align-items-center wbi-logo-section">
+                <!-- Placeholder untuk Logo WBI -->
+                <img src="https://placehold.co/100x50/065F46/FFFFFF?text=WBI" alt="Logo WBI Politeknik" class="rounded me-3">
+                <div class="text-white fs-4 fw-bold wbi-text">WBI <br> <span class="fs-6 fw-normal">POLITEKNIK</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigasi Sekunder -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-emerald-700 shadow-inner py-3">
+        <div class="container">
+            <!-- Div untuk tautan navigasi sekunder, selalu terlihat pada tampilan desktop -->
+            <!-- Kelas 'collapse' dan atribut data-bs-target/toggle dihapus dari toggler button -->
+            <div class="navbar-collapse" id="navbarNavSecondary">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Salamdridirektur.html">SALAM DARI DIREKTUR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="seJarah.html">SEJARAH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="nilaiinti.html">NILAI-NILAI INTI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="akademik.html">AKADEMIK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="kemahasiswaan.html">KEMAHASISWAAN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Konten Utama -->
+    <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">TENTANG WBI</a></li>
+                <li class="breadcrumb-item active" aria-current="page">SALAM DARI DIREKTUR</li>
+            </ol>
+        </nav>
+
+        <div class="director-title">
+            <h1 class="mb-0">SALAM DARI DIREKTUR</h1>
+        </div>
+    </div>
+    <div class="mb-2">
+        <div class="video-responsive">
+            <iframe width="1600" height="900" frameborder="0"allowfullscreen ="allowfullscreen" src="https://www.youtube.com/embed/l7a0O7bu9Qg" ></iframe>
+        </div>
+    </div>
+    
+    <div class="banner-caption">Salam Dari Direktur : Dr. Ir. Jenny Elisabeth, MS</div>
+    <p class="text-decoration" style="text-align: justify;">Politeknik Wilmar Bisnis Indonesia (WBI) adalah perguruan tinggi yang didirikan oleh salah satu pebisnis sukses Indonesia kelahiran Pematang Siantar, Martua Sitorus. Niat mulianya berawal dari rasa prihatin beliau pada tingkat pengangguran yang relatif tinggi serta rendahnya jumlah entrepreneur (wirausaha) di Indonesia.  Fakta yang ada bahwa di Februari 2020 tercatat tingkat pengangguran terbuka di Indonesia sebanyak 6.88 juta orang dan dengan penambahan jumlah pengangguran lebih dari 60 ribu orang dalam setahun. Hal yang menambah keprihatinan beliau adalah di dalam jumlah pengangguran yang meningkat tersebut ikut bertambah angka pengangguran terbuka dari lulusan pendidikan tinggi. Oleh sebab itu beliau berkomitmen untuk menjadikan Politeknik WBI sebagai institusi pendidikan tinggi yang dapat membantu masyarakat Indonesia keluar dari masalah pengangguran tersebut dan menciptakan kesejahteraan masyarakat yang lebih luas.
+        Melalui lima program studi yang didukung oleh staf pengajar yang ahli di bidangnya serta fasilitas kampus yang modern, Politeknik WBI berkomitmen menjadi institusi pendidikan yang terbaik dan ideal bagi orang muda Indonesia untuk siap bersaing di dunia bisnis yang semakin kompetitif di era industri 4.0 ini.  Program pendidikan di Politeknik WBI telah didesain sedemikian rupa untuk melahirkan sosok entrepreneur-entrepreneur muda terdidik, terampil, dan tangguh dari ‘bangku kuliah’.   Tujuan tersebut  tentunya akan memperkuat ketahanan nasional bangsa Indonesia, sesuai dengan motto Politeknik WBI yakni “Nurturing Entrepreneurs, Empowering Nation”.
+        Kurikulum pembelajaran di Politeknik WBI disusun untuk memberikan kompetensi keahlian dan keterampilan khusus sesuai dengan program studi yang dipilih oleh peserta didik.  Selain fokus pada peningkatan kemampuan teknis tersebut, Politeknik WBI juga menerapkan 6 tahap pembelajaran entrepreneurship yang bertujuan menghasilkan lulusan berkarakter entrepreneur yang kreatif, inovatif, mandiri, dan adaptif dalam menghadapi perubahan lingkungan yang demikian dinamis saat ini, serta dapat berperan sebagai pemberi solusi untuk setiap masalah yang ada di sekitarnya.  Pembelajaran entrepreneurship di Politeknik WBI mencakup pendidikan bisnis yang diaplikasikan dalam praktek bisnis nyata, agar peserta didik memperoleh pengalaman positif dalam berbisnis dan tidak hanya mengerti usaha bisnis pada tataran teori semata.
+        Dengan penjelasan di atas, Politeknik WBI mengundang putra-putri Indonesia untuk turut berpartisipasi dalam membangun bangsa.   Ayo orang muda Indonesia, raih masa depanmu bersama kami.   Ayo ke WBI….
+    </p>
+    <footer class="footer">
+        <div class="container-fluid">
+            <p>© 2025 Politeknik WBI. All rights reserved.</p>
+        </div>
+    </footer>
+
+   
+
+        
+    
+</body>
+</html>

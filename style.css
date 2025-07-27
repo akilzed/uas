@@ -1,0 +1,468 @@
+/* =============================== */
+/* 1. Global & Base Styles       */
+/* =============================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Menggunakan warna yang lebih terang dari sebelumnya */
+    color: #212529;
+    margin: 0;
+    padding: 0;
+}
+
+/* =============================== */
+/* 2. Top Info Bar (Header Top)  */
+/* =============================== */
+.container-fluid .row.text-white > div {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* =============================== */
+/* 3. Main Header (Navbar)       */
+/* =============================== */
+.navbar-custom {
+    background-color: #198754;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 9px; /* dari 30px ke 10px */
+}
+.navbar-custom .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #e6ae07; /* Warna hover yang kontras */
+}
+
+/* =============================== */
+/* 4.  (Carousel udul )    */
+/* =============================== */
+.carousel-inner img {
+  width: 100%;
+  max-height: 750px;
+  object-fit: cover;
+  border-bottom: 2px solid #198754;
+  margin-top: -60px; /* Naik ke bawah navbar */
+  z-index: 0;
+}
+
+/* Alternatif untuk class khusus */
+.carousel-img-adjusted {
+  width: 100%;
+  max-height: 750px;
+  object-fit: cover;
+  margin-top: -60px;
+  z-index: 0;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px 25px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.carousel-caption h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+}
+
+
+/* =============================== */
+/* 2. Banner "Selamat dan Sukses" */
+/* =============================== */
+
+.banner-sukses {
+  margin-top: -40px; /* Bisa disesuaikan */
+  position: relative;
+  z-index: 1;
+}
+
+.banner-sukses img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+/* =============================== */
+/* 5. Visi, Misi, Tujuan Section */
+/* =============================== */
+.section-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.section-box:hover {
+    transform: translateY(-5px);
+}
+
+.section-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    color: #198754;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text-block {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* =============================== */
+/* 6. Program Studi & Berita Cards (General Card Styles) */
+/* =============================== */
+/* Menggabungkan properti card-title dan card-text agar tidak redundan */
+.card .card-title {
+    font-size: 1.2rem; /* Menggunakan ukuran ini sebagai standar */
+    font-weight: 600;
+    margin-bottom: 10px; /* Tambahkan kembali margin jika perlu */
+}
+
+.card .card-text {
+    font-size: 0.95rem; /* Menggunakan ukuran ini sebagai standar */
+    color: #555;
+}
+
+.card .btn {
+    transition: all 0.2s;
+    width: 100%; /* Agar tombol di semua card memiliki lebar penuh */
+    font-weight: 500; /* Untuk tombol detail layanan */
+}
+
+.card .btn:hover {
+    background-color: #146c43; /* Warna hover yang konsisten (lebih gelap dari hijau utama) */
+    color: white;
+}
+
+/* Specific to Program Studi and Berita sections (card images) */
+.card-img-top {
+    max-height: 200px; /* Batasi tinggi gambar di card */
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+/* =============================== */
+/* 7. Statistik Section          */
+/* =============================== */
+.statistik-section {
+    background-color: #fff;
+    margin-top: 60px;
+    padding-top: 100px;
+    padding-bottom: 140px;
+    border-top: 3px solid #198754;
+    border-bottom: 3px solid #198754;
+}
+
+.stat-box {
+    background-color: #e9f0ef;
+    padding: 30px 20px;
+    border-radius: 50px; /* Bentuk lebih membulat */
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #198754;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: #444;
+}
+
+/* =============================== */
+/* Layanan Kampus Section         */
+/* =============================== */
+.layanan-section {
+      background-color: #f9f9f9;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    .layanan-section h2 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #198754;
+      margin-bottom: 10px;
+    }
+
+    .layanan-section p.text-muted {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .layanan-section .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+
+    .layanan-section .card:hover {
+      background-color: #f0f0f0;
+    }
+
+    .layanan-section .card-img-top {
+      width: 100% !important;
+      height: 200px !important;
+      object-fit: cover;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+
+    .layanan-section .card-title {
+      font-size: 17px;
+      font-weight: bold;
+      color: #198754;
+      margin-bottom: 8px;
+    }
+
+    .layanan-section .card-text {
+      font-size: 15px;
+      color: #555;
+      padding-bottom: 10px;
+    }
+
+    .layanan-section .btn {
+      width: 100%;
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      background-color: #198754;
+      color: white;
+      border: none;
+    }
+
+    .layanan-section .btn:hover {
+      background-color: #146c43;
+    }
+/* =============================== */
+/* 9. Kontak Section             */
+/* =============================== */
+.kontak {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.kontak h2 {
+    text-align: center;
+    color: #198754;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.info-box {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.info-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-box li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.info-box i {
+    color: #198754;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+form .form-control {
+    border-radius: 6px;
+}
+
+form button {
+    width: 100%;
+}
+
+/* =============================== */
+/* 10. Footer                    */ 
+/* =============================== */
+.footer {
+    background-color: #198754;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 60px;
+}
+
+/* =============================== */
+/* 12.untuk berita wbi dan  terbaru*/
+/* =============================== */
+.container {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.container h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #198754;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container hr {
+  height: 3px;
+  width: 100px;
+  background-color: #198754;
+  opacity: 1;
+  margin: 0 auto 40px auto;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #212529;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 15px;
+  color: #555;
+}
+
+.card .btn {
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 6px 14px;
+}
+
+
+/* =============================== */
+/* 11. Media Queries (Responsive)*/
+/* =============================== */
+@media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 12px; /* Dikecilkan lagi untuk layar sangat kecil */
+        padding: 10px;
+    }
+    .carousel-caption h3 {
+        font-size: 16px;
+    }
+    .carousel-caption p {
+        font-size: 10px;
+    }
+
+    .section-img {
+        height: 120px; /* Dikecilkan lagi */
+    }
+
+    .stat-number {
+        font-size: 22px; /* Disesuaikan */
+    }
+
+    .stat-label {
+        font-size: 14px;
+    }
+
+    .navbar-custom .nav {
+        flex-direction: column; /* Ubah navbar menjadi kolom */
+        text-align: center;
+    }
+
+    .navbar-custom .nav-item {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-sm-6, .col-sm-3 {
+        text-align: center;
+    }
+    .container-fluid .row.text-white > div {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .navbar-custom .nav-link {
+        font-size: 14px;
+    }
+
+    .carousel-caption {
+        display: none; /* Sembunyikan caption di layar sangat kecil */
+    }
+
+    .section-box {
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .card .card-title {
+        font-size: 14px;
+    }
+
+    .card .card-text {
+        font-size: 12px;
+    }
+
+    .stat-box {
+        padding: 20px 10px;
+    }
+
+    .stat-number {
+        font-size: 20px;
+    }
+
+    .stat-label {
+        font-size: 12px;
+    }
+
+    .kontak h2 {
+        font-size: 24px;
+    }
+
+    .info-box li {
+        font-size: 14px;
+    }
+}
